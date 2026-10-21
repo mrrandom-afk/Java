@@ -1,0 +1,37 @@
+class ExceptionHandlingDemo
+{
+    // Method uses throws
+    public static void checkAge(int age) throws ArithmeticException
+    {
+        if (age < 18)
+        {
+            throw new ArithmeticException("Age must be 18 or above"); // throw is used here
+        }
+        else
+        {
+            System.out.println("You are eligible.");
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        try
+        {
+            System.out.println("Inside try block");
+            int a = 10;
+            int b = 0;
+            int result = a / b; // This will cause ArithmeticException
+            System.out.println("Result: " + result);
+            checkAge(15); // This line will not execute if exception occurs above
+        }
+        catch (ArithmeticException e)
+        {
+            System.out.println("Caught exception: " + e.getMessage());
+        }
+        finally
+        {
+            System.out.println("Finally block always executes");
+        }
+        System.out.println("Program continues after try-catch-finally");
+    }
+}

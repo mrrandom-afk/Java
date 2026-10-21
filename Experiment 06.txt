@@ -1,0 +1,191 @@
+// ==========================================
+// Experiment 06 - Part 1: Simple Website
+// ==========================================
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to HTML, CSS and JavaScript Website</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Welcome</h2>
+        <p>This is a simple website created using HTML, CSS and JavaScript.</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="demo"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Website</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML =
+                "Hello! JavaScript is working successfully.";
+        }
+    </script>
+</body>
+</html>
+
+
+// ==========================================
+// Experiment 06 - Part 2: Added Image Code
+// ==========================================
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #34495e;
+            text-align: center;
+            padding: 12px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        .container {
+            text-align: center;
+            padding: 30px;
+        }
+        .container img {
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Website</h1>
+        <p>Website Created Using HTML, CSS and JavaScript</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Image Section -->
+        <img src="Image01.webp" alt="HTML CSS JS Image">
+        <h2>Welcome to My Website</h2>
+        <p>
+            This website demonstrates the use of HTML for structure,
+            CSS for styling, and JavaScript for interactivity.
+        </p>
+        <button onclick="showMessage()">Click Here</button>
+        <p id="message"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Personal Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Welcome! You have successfully used JavaScript.";
+        }
+    </script>
+</body>
+</html>

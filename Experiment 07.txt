@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automatic Background Color Change</title>
+</head>
+<body>
+    <h1 align="center"><br>Wel-Come</br> Background Color Changes Every 5 Seconds</h1>
+
+    <script>
+        // Array of colors
+        let colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink"];
+        let index = 0;
+
+        // Function to change background color
+        function changeColor() {
+            document.body.style.backgroundColor = colors[index];
+            index++;
+            if (index >= colors.length) {
+                index = 0;
+            }
+        }
+
+        // Change color every 5 seconds
+        setInterval(changeColor, 5000);
+    </script>
+</body>
+</html>

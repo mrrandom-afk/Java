@@ -1,0 +1,68 @@
+class Employee
+{
+    void company()
+    {
+        System.out.println("Employee works in ABC Company");
+    }
+}
+
+// Single Inheritance
+class Manager extends Employee
+{
+    void manage()
+    {
+        System.out.println("Manager manages the team");
+    }
+}
+
+// Multilevel Inheritance
+class SeniorManager extends Manager
+{
+    void decision()
+    {
+        System.out.println("Senior Manager takes important decisions");
+    }
+}
+
+// Hierarchical Inheritance
+class Developer extends Employee
+{
+    void code()
+    {
+        System.out.println("Developer writes code");
+    }
+}
+
+class Tester extends Employee
+{
+    void test()
+    {
+        System.out.println("Tester tests the software");
+    }
+}
+
+public class EmployeeInheritance
+{
+    public static void main(String args[])
+    {
+        System.out.println("Single Inheritance");
+        Manager m = new Manager();
+        m.company();
+        m.manage();
+
+        System.out.println("\nMultilevel Inheritance");
+        SeniorManager sm = new SeniorManager();
+        sm.company();
+        sm.manage();
+        sm.decision();
+
+        System.out.println("\nHierarchical Inheritance");
+        Developer d = new Developer();
+        d.company();
+        d.code();
+
+        Tester t = new Tester();
+        t.company();
+        t.test();
+    }
+}
